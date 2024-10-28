@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKG_Lab5", "PKG_Lab5\PKG_Lab5.csproj", "{4594EC1C-8440-4691-A30C-08CB2E92C27C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4594EC1C-8440-4691-A30C-08CB2E92C27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4594EC1C-8440-4691-A30C-08CB2E92C27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4594EC1C-8440-4691-A30C-08CB2E92C27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4594EC1C-8440-4691-A30C-08CB2E92C27C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7452C04-447D-4377-A2F0-98D39DEAC700}
+	EndGlobalSection
+EndGlobal

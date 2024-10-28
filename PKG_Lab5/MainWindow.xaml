@@ -1,0 +1,65 @@
+﻿<Window x:Class="PKG_Lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PKG_Lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Canvas Name="DrawingCanvas" Background="White" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="15" Grid.RowSpan="20"/>
+        <Label Content="Введите данные:" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="2" FontSize="18"/>
+        <TextBox x:Name="InputTextBox" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="2" Grid.RowSpan="6" TextWrapping="Wrap" AcceptsReturn="True" FontSize="18"/>
+
+        <Button Content="Отсечь по средней точке" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="8" Click="OnMidPointClipButtonClick"/>
+        <Button Content="Загрузить из файла" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="9" Click="LoadFromFileButton_Click"/>
+        <Button Content="Отсечь многоугольником" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="10" Click="OnPolygonClipButtonClick"/>
+
+        <Label Content="Масштаб:" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="12" Grid.RowSpan="2" FontSize="18"/>
+        <Slider x:Name="ScaleSlider" Minimum="0.1" Maximum="5.0" Value="1.0" TickFrequency="0.1" SmallChange="0.1" LargeChange="0.5" Grid.Column="15" Grid.ColumnSpan="4" Grid.Row="14" ValueChanged="ScaleSlider_ValueChanged"/>
+    </Grid>
+</Window>
